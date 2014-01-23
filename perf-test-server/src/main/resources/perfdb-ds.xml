@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datasources xmlns="http://www.jboss.org/ironjacamar/schema">
+    <datasource 
+        jndi-name="perfdbDatasource"
+        enabled="true" 
+        use-java-context="true" pool-name="perfdbDatasource_pool">
+        <connection-url>jdbc:derby://localhost:1527/perfdb;create=true</connection-url>
+        <driver>derbyclient.jar</driver>
+        <security>
+		      <user-name>user</user-name>
+		      <password>user</password>
+        </security>
+    </datasource>
+</datasources>

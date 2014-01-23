@@ -1,0 +1,20 @@
+package org.jboss.perf.test.server.dao;
+
+import java.util.List;
+
+import org.jboss.perf.test.server.model.Threshold;
+
+
+public interface ThresholdDao {
+	public List<Threshold> getGlobalThresholds();
+	public Threshold getGlobalThresholdByAttrName(String attrName);
+	public Threshold getGlobalThresholdByUnitId(long unitId);
+	public Threshold getGlobalThresholdByAttrId(long attrId);
+	public Threshold getLocalThresholdByUnitId(long unitId);
+	public Threshold getLocalThresholdByAttrId(long attrId);
+	public Threshold getLocalThresholdByProjectAndAttr(long projectId, String attrName);
+	public Threshold getProjectLocalThresholdByAttrName(String projectName, String attrName);
+	public List<Threshold> getProjectLocalThresholds(String projectName);
+	public void save(Threshold threshold);
+	public void remove(Threshold threshold);
+}

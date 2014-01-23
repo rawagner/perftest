@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+org.jboss.ide.eclipse.as.core.singledeployable.deployableList=resources/derbyclient.jar\nsrc/main/resources/perfdb-ds.xml\nsrc/main/resources/perfdb-ds.xml\nresources/perfdb-ds.xml\n
